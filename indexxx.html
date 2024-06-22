@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Styling with JavaScript</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+            cursor: pointer;
+        }
+
+        .styled-text {
+            color: black;
+        }
+
+        .paragraph {
+            font-size: 16px;
+        }
+
+        .list-item {
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        .header {
+            font-size: 24px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="changeColor()">Click me </div>
+    <button onclick="changeTextColor()">Change Text Color</button>
+    <p class="styled-text">This is a paragraph.</p>
+    <p class="paragraph" onmouseover="increaseFontSize()" onmouseout="resetFontSize()">Hover over me to change font size</p>
+    <ul>
+        <li class="list-item" onclick="changeBackgroundColor(this)">Click me to change my background color</li>
+    </ul>
+    <h1 class="header" ondblclick="changeTextDecoration()">Double-click me to change text decoration</h1>
+
+    <script src="scripttt.js"></script>
+</body>
+</html>
